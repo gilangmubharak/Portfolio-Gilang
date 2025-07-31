@@ -1,6 +1,7 @@
 # Portfolio Gilang
-![image.png](portfolio.jpeg)
-# Hosting
+
+# Hosting 
+
 ## Github Pages
 | Site   | Docs  | Demo  |
 | :-------------: |:-------------: |:-------------: |
