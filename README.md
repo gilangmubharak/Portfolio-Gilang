@@ -1,5 +1,7 @@
 # Portfolio Gilang
 
+![](portfolio.jpeg)
+
 # Hosting 
 
 ## Github Pages
