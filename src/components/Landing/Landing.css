@@ -83,6 +83,16 @@
   margin: 1rem 0;
 }
 
+@media screen and (min-width: 901px) {
+  .lcr--content {
+    width: 52%;
+  }
+
+  .lcr--content h1 {
+    white-space: nowrap;
+  }
+}
+
 .lcr--content p {
   margin-top: 1.45rem;
   font-weight: 500;

@@ -153,8 +153,8 @@
     line-height: 110%;
     font-weight: 500;
     font-family: var(--primaryFont);
-    width: 45%;
-    word-break: break-word;
+    width: auto;
+    word-break: normal;
 }
 
 .socialmedia-icons {
@@ -179,6 +179,16 @@
         padding: 2rem 4rem;
         width: 90%;
         margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .contacts-details {
+        flex: 0.7;
+    }
+
+    .personal-details p {
+        white-space: nowrap;
     }
 }
 

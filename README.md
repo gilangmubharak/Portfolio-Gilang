@@ -1,5 +1,5 @@
 # Portfolio Gilang
-![Profile](assets/Profil.png)
+<img src="assets/profile.png" width="300"/>
 
 # Hosting 
 
