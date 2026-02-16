@@ -1,4 +1,4 @@
-import CVgilang from '../assets/pdf/cv.pdf'
+import CVgilang from '../assets/pdf/CV - GILANG FAUZUL MUBHARAK.pdf'
 import Gilanglogo from '../assets/png/Gil.png';
 
 

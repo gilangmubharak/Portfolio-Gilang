@@ -16,7 +16,7 @@ export const experienceData = [
     {
         id: 3,
         company: 'Universitas Muhammadiyah Sukabumi',
-        jobtitle: 'Android Developer, Kotlin Native',
+        jobtitle: 'Full Stack Development, React JS & Spring Boot',
         startYear: '2023',
         endYear: 'Sekarang'
     },

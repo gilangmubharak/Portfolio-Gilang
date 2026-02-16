@@ -19,12 +19,48 @@ export const projectsData = [
         image: one
     },
     {
+        id: 11,
+        projectName: 'Sistem Prediksi Risiko Hipertensi',
+        projectDesc: 'Project Tugas Akhir Sistem Prediksi Risiko Hipertensi Berbasis Machine Learning, di kembangkan menggunakan Algoritma Support Vector Machine dengan framework Flask. .',
+        tags: ['Python', 'SVM', 'Flask'],
+        code: 'https://huggingface.co/spaces/gilangmubharak/Flask-PrediksiHipertensiSVM',
+        demo: 'https://huggingface.co/spaces/gilangmubharak/Flask-PrediksiHipertensiSVM',
+        image: eleven
+    },
+    {
+        id: 4,
+        projectName: 'Analisis Sentiment Konsumen',
+        projectDesc: 'Project Analisis Sentimen Konsumen Terhadap Produk Laptop Lokal berbasis Machine Learning, di kembangkan menggunakan Algoritma Naive Bayes dengan data scraping dan framework Flask.',
+        tags: ['Python', 'Naive Bayes', 'Flask'],
+        code: 'https://github.com/gilangmubharak/Analisis-Sentiment',
+        demo: 'https://github.com/gilangmubharak/Analisis-Sentiment',
+        image: four
+    },
+    {
+        id: 6,
+        projectName: 'Task And Note Management',
+        projectDesc: 'Sebuah aplikasi manajemen tugas dan catatan sederhana.',
+        tags: ['Java Script', 'React JS'],
+        code: 'https://github.com/gilangmubharak/Task-App.git',
+        demo: 'https://github.com/gilangmubharak/Task-App.git',
+        image: six
+    },
+    {
+        id: 5,
+        projectName: 'Valorant Agent Catalog',
+        projectDesc: 'Sebuah aplikasi katalog agen Valorant yang menampilkan informasi tentang berbagai agen dalam permainan Valorant, termasuk kemampuan, latar belakang, dan statistik mereka.',
+        tags: ['React Native', 'API Valorant'],
+        code: 'https://github.com/gilangmubharak/Valorant-List.git',
+        demo: 'https://github.com/gilangmubharak/Valorant-List.git',
+        image: five
+    },
+    {
         id: 2,
         projectName: 'MetroPlan Game',
         projectDesc: 'Kota Cerdas Berkelanjutan adalah Game Edukasi. Tujuan utamanya adalah untuk mendidik para pemain tentang isu-isu keberlanjutan saat ini.',
         tags: ['C#', 'Unity'],
-        code: 'https://github.com/gilangmubharak',
-        demo: 'https://github.com/gilangmubharak',
+        code: 'https://github.com/gilangmubharak/MetroPlan-Game.git',
+        demo: 'https://github.com/gilangmubharak/MetroPlan-Game.git',
         image: two
     },
     {
@@ -36,42 +72,9 @@ export const projectsData = [
         demo: 'https://github.com/gilangmubharak',
         image: three
     },
-    {
-        id: 11,
-        projectName: 'SVM-Python',
-        projectDesc: 'Proyek ini melibatkan pengembangan pembelajaran mesin untuk mengelola data dan merekomendasikan topik tesis.',
-        tags: ['Python', 'SVM'],
-        code: 'https://github.com/gilangmubharak',
-        demo: 'https://github.com/gilangmubharak',
-        image: eleven
-    },
-    {
-        id: 5,
-        projectName: 'E-Commerce App',
-        projectDesc: 'Sebuah aplikasi E-commerce Sederhana.',
-        tags: ['React Native', 'Firebase'],
-        code: 'https://github.com/gilangmubharak',
-        demo: 'https://github.com/gilangmubharak',
-        image: five
-    },
-    {
-        id: 6,
-        projectName: 'Uber Lite',
-        projectDesc: 'Uber clone',
-        tags: ['Flutter'],
-        code: 'https://github.com/gilangmubharak',
-        demo: 'https://github.com/gilangmubharak',
-        image: six
-    },
-    {
-        id: 4,
-        projectName: 'Stock Market App',
-        projectDesc: 'Sebuah aplikasi API pasar saham sederhana',
-        tags: ['React', 'Redux', 'Bootstrap'],
-        code: 'https://github.com/gilangmubharak',
-        demo: 'https://github.com/gilangmubharak',
-        image: four
-    }
+    
+    
+    
     // {
     //     id: 8,
     //     projectName: 'Car Pooling System',

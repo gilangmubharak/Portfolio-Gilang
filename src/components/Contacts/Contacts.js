@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { Snackbar, IconButton, SnackbarContent } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
-import axios from 'axios';
 import isEmail from 'validator/lib/isEmail';
 import { makeStyles } from '@material-ui/core/styles';
 import {
@@ -36,6 +35,7 @@ function Contacts() {
 
     const [success, setSuccess] = useState(false);
     const [errMsg, setErrMsg] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const { theme } = useContext(ThemeContext);
 
@@ -129,8 +129,10 @@ function Contacts() {
 
     const classes = useStyles();
 
-    const handleContactForm = (e) => {
+    const handleContactForm = async (e) => {
         e.preventDefault();
+
+        setSuccess(false);
 
         if (name && email && message) {
             if (isEmail(email)) {
@@ -140,8 +142,25 @@ function Contacts() {
                     message: message,
                 };
 
-                axios.post(contactsData.sheetAPI, responseData).then((res) => {
-                    console.log('success');
+                try {
+                    setIsSubmitting(true);
+
+                    const response = await fetch('/api/contact', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(responseData),
+                    });
+
+                    const responseJson = await response.json();
+
+                    if (!response.ok) {
+                        throw new Error(
+                            responseJson.message || 'Failed to send message'
+                        );
+                    }
+
                     setSuccess(true);
                     setErrMsg('');
 
@@ -149,7 +168,15 @@ function Contacts() {
                     setEmail('');
                     setMessage('');
                     setOpen(false);
-                });
+                } catch (error) {
+                    setErrMsg(
+                        error.message ||
+                            'Terjadi kesalahan saat mengirim pesan'
+                    );
+                    setOpen(true);
+                } finally {
+                    setIsSubmitting(false);
+                }
             } else {
                 setErrMsg('Invalid email');
                 setOpen(true);
@@ -178,7 +205,10 @@ function Contacts() {
                                 <input
                                     placeholder='Masukkan Nama'
                                     value={name}
-                                    onChange={(e) => setName(e.target.value)}
+                                    onChange={(e) => {
+                                        setName(e.target.value);
+                                        setSuccess(false);
+                                    }}
                                     type='text'
                                     name='Name'
                                     className={`form-input ${classes.input}`}
@@ -194,7 +224,10 @@ function Contacts() {
                                 <input
                                     placeholder='Masukkan Email'
                                     value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
+                                    onChange={(e) => {
+                                        setEmail(e.target.value);
+                                        setSuccess(false);
+                                    }}
                                     type='email'
                                     name='Email'
                                     className={`form-input ${classes.input}`}
@@ -210,7 +243,10 @@ function Contacts() {
                                 <textarea
                                     placeholder='Ketik pesan anda....'
                                     value={message}
-                                    onChange={(e) => setMessage(e.target.value)}
+                                    onChange={(e) => {
+                                        setMessage(e.target.value);
+                                        setSuccess(false);
+                                    }}
                                     type='text'
                                     name='Message'
                                     className={`form-message ${classes.message}`}
@@ -221,8 +257,15 @@ function Contacts() {
                                 <button
                                     type='submit'
                                     className={classes.submitBtn}
+                                    disabled={isSubmitting}
                                 >
-                                    <p>{!success ? 'Send' : 'Sent'}</p>
+                                    <p>
+                                        {isSubmitting
+                                            ? 'Sending...'
+                                            : !success
+                                            ? 'Send'
+                                            : 'Sent'}
+                                    </p>
                                     <div className='submit-icon'>
                                         <AiOutlineSend
                                             className='send-icon'
@@ -230,6 +273,7 @@ function Contacts() {
                                                 animation: !success
                                                     ? 'initial'
                                                     : 'fly 0.8s linear both',
+                                                opacity: isSubmitting ? '0.6' : '1',
                                                 position: success
                                                     ? 'absolute'
                                                     : 'initial',
