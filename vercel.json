@@ -3,11 +3,6 @@
     "installCommand": "yarn install",
     "buildCommand": "yarn build:prod",
     "outputDirectory": "build",
-    "functions": {
-        "api/**/*.js": {
-            "runtime": "nodejs20.x"
-        }
-    },
     "rewrites": [
         {
             "source": "/api/(.*)",
