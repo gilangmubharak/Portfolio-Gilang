@@ -21,7 +21,7 @@ export const projectsData = [
     {
         id: 11,
         projectName: 'Sistem Prediksi Risiko Hipertensi',
-        projectDesc: 'Project Tugas Akhir Sistem Prediksi Risiko Hipertensi Berbasis Machine Learning, di kembangkan menggunakan Algoritma Support Vector Machine dengan framework Flask. .',
+        projectDesc: 'Project Tugas Akhir Sistem Prediksi Risiko Hipertensi Berbasis Machine Learning, di kembangkan menggunakan Algoritma Support Vector Machine dengan framework Flask.',
         tags: ['Python', 'SVM', 'Flask'],
         code: 'https://huggingface.co/spaces/gilangmubharak/Flask-PrediksiHipertensiSVM',
         demo: 'https://huggingface.co/spaces/gilangmubharak/Flask-PrediksiHipertensiSVM',
