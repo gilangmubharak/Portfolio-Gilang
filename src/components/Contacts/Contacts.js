@@ -4,7 +4,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import isEmail from 'validator/lib/isEmail';
 import { makeStyles } from '@material-ui/core/styles';
 import {
-    SiTwitter,
+    SiX,
     SiLinkedin,
     SiGithub,
     SiYoutube,
@@ -364,7 +364,7 @@ function Contacts() {
                                     rel='noreferrer'
                                     className={classes.socialIcon}
                                 >
-                                    <SiTwitter aria-label='Twitter' />
+                                    <SiX aria-label='Twitter' />
                                 </a>
                             )}
                             {socialsData.github && (

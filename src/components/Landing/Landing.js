@@ -10,7 +10,7 @@ import { socialsData } from '../../data/socialsData';
 
 
 import {
-    SiTwitter,
+    SiX,
     SiLinkedin,
     SiGithub,
     SiInstagram,
@@ -121,7 +121,7 @@ function Landing() {
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <SiTwitter
+                                <SiX
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='Twitter'
