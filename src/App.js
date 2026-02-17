@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/dist/react/index.js';
 
 import { ThemeContext } from './contexts/ThemeContext';
 import { Main, BlogPage, ProjectPage } from './pages'
@@ -29,6 +30,7 @@ function App() {
         </Switch>
       </Router>
       <BackToTop />
+      <Analytics />
     </div>
   );
 }
