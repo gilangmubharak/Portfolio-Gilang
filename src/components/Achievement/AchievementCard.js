@@ -11,6 +11,7 @@ import './Achievement.css'
 function AchievementCard({id, title, details, date, field, image}) {
 
     const { theme } = useContext(ThemeContext);
+    const cardTextColor = theme.tertiary;
 
     const useStyles = makeStyles((t) => ({
         achievementCard : {
@@ -27,10 +28,10 @@ function AchievementCard({id, title, details, date, field, image}) {
            <div key={id} className={`achievement-card ${classes.achievementCard}`}>
                 <div className="achievecard-content">
                     <div className="achievecard-details1">
-                        <h3 style={{color: theme.tertiary}}>{title}</h3>
-                        <p style={{color: theme.tertiary80}}>{details}</p>
+                        <h3 style={{color: cardTextColor}}>{title}</h3>
+                        <p style={{color: cardTextColor}}>{details}</p>
                     </div>
-                    <div className="achievecard-details2" style={{color: theme.primary}}>
+                    <div className="achievecard-details2" style={{color: cardTextColor}}>
                         <p>{date}</p>
                         <div className="achievecard-field">
                             <AiOutlineFolder />

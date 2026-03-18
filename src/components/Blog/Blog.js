@@ -7,23 +7,25 @@ import './Blog.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { blogData } from '../../data/blogData'
 import SingleBlog from './SingleBlog/SingleBlog';
+import { getReadableTextColor } from '../../utils/colorContrast';
 
 
 function Blog() {
 
     const { theme } = useContext(ThemeContext);
+    const primaryButtonTextColor = getReadableTextColor(theme.primary);
 
     const useStyles = makeStyles(() => ({
         viewAllBtn : {
-            color: theme.tertiary, 
+            color: primaryButtonTextColor, 
             backgroundColor: theme.primary,
             "&:hover": {
-                color: theme.secondary, 
+                color: primaryButtonTextColor, 
                 backgroundColor: theme.primary,
             }
         },
         viewArr : {
-            color: theme.tertiary, 
+            color: primaryButtonTextColor, 
             backgroundColor: theme.secondary70,
             width: '40px',
             height: '40px',
@@ -32,7 +34,7 @@ function Blog() {
             borderRadius: '50%',
             cursor: 'pointer',
             "&:hover": {
-                color: theme.tertiary, 
+                color: primaryButtonTextColor, 
                 backgroundColor: theme.secondary,
             }
         },

@@ -2,11 +2,14 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { FaPlay, FaCode } from 'react-icons/fa';
 import Fade from '../../../utils/Fade';
+import { getReadableTextColor } from '../../../utils/colorContrast';
 
 import placeholder from '../../../assets/png/placeholder.png';
 import './SingleProject.css';
 
 function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
+    const projectCardTextColor = getReadableTextColor(theme.primary400);
+
     const useStyles = makeStyles((t) => ({
         iconBtn: {
             display: 'flex',
@@ -15,8 +18,8 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
             width: 40,
             height: 40,
             borderRadius: 50,
-            border: `2px solid ${theme.tertiary}`,
-            color: theme.tertiary,
+            border: `2px solid ${projectCardTextColor}`,
+            color: projectCardTextColor,
             transition: 'all 0.2s',
             '&:hover': {
                 backgroundColor: theme.secondary,
@@ -44,7 +47,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                 <div className='projectContent'>
                     <h3
                         id={name.replace(' ', '-').toLowerCase()}
-                        style={{ color: theme.tertiary }}
+                        style={{ color: projectCardTextColor }}
                     >
                         {name}
                     </h3>

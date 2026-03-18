@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { projectsData } from '../../data/projectsData'
 import { HiArrowRight } from "react-icons/hi";
+import { getReadableTextColor } from '../../utils/colorContrast';
 
 import './Projects.css'
 import SingleProject from './SingleProject/SingleProject';
@@ -12,20 +13,21 @@ import SingleProject from './SingleProject/SingleProject';
 function Projects() {
 
     const { theme } = useContext(ThemeContext);
+    const primaryButtonTextColor = getReadableTextColor(theme.primary);
 
     
     const useStyles = makeStyles(() => ({
         viewAllBtn : {
-            color: theme.tertiary, 
+            color: primaryButtonTextColor, 
             backgroundColor: theme.primary,
             transition: 'color 0.2s',
             "&:hover": {
-                color: theme.secondary, 
+                color: primaryButtonTextColor,
                 backgroundColor: theme.primary,
             }
         },
         viewArr : {
-            color: theme.tertiary, 
+            color: primaryButtonTextColor, 
             backgroundColor: theme.secondary70,
             width: '40px',
             height: '40px',
@@ -35,7 +37,7 @@ function Projects() {
             cursor: 'pointer',
             transition: 'background-color 0.2s',
             "&:hover": {
-                color: theme.tertiary, 
+                color: primaryButtonTextColor, 
                 backgroundColor: theme.secondary,
             }
         },

@@ -12,6 +12,7 @@ import './Experience.css'
 function ExperienceCard({id, company, jobtitle, startYear, endYear}) {
 
     const { theme } = useContext(ThemeContext);
+    const cardTextColor = theme.tertiary;
 
     const useStyles = makeStyles((t) => ({
         experienceCard : {
@@ -32,9 +33,9 @@ function ExperienceCard({id, company, jobtitle, startYear, endYear}) {
                     <img src={theme.type === 'light' ? expImgBlack : expImgWhite} alt="" width='36' height='36' loading='lazy' decoding='async' />
                 </div>
                 <div className="experience-details">
-                    <p className='experience-years' style={{color: theme.primary}}>{startYear}-{endYear}</p>
-                    <h3 style={{color: theme.tertiary}}>{jobtitle}</h3>
-                    <p className='experience-company' style={{color: theme.tertiary80}}>{company}</p>
+                    <p className='experience-years' style={{color: cardTextColor}}>{startYear}-{endYear}</p>
+                    <h3 style={{color: cardTextColor}}>{jobtitle}</h3>
+                    <p className='experience-company' style={{color: cardTextColor}}>{company}</p>
                 </div>
             </div>
         </Fade>   
