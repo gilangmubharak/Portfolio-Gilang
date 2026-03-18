@@ -1,7 +1,7 @@
 {
     "version": 2,
-    "installCommand": "yarn install --frozen-lockfile",
-    "buildCommand": "yarn build:prod",
+    "installCommand": "corepack yarn install --immutable",
+    "buildCommand": "corepack yarn build:prod",
     "outputDirectory": "build",
     "headers": [
         {
