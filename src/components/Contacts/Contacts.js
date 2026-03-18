@@ -197,12 +197,13 @@ function Contacts() {
                 <h2 style={{ color: theme.primary }}>Contacts</h2>
                 <div className='contacts-body'>
                     <div className='contacts-form'>
-                        <form onSubmit={handleContactForm}>
+                        <form onSubmit={handleContactForm} autoComplete='on'>
                             <div className='input-container'>
-                                <label htmlFor='Name' className={classes.label}>
+                                <label htmlFor='contact-name' className={classes.label}>
                                     Name
                                 </label>
                                 <input
+                                    id='contact-name'
                                     placeholder='Masukkan Nama'
                                     value={name}
                                     onChange={(e) => {
@@ -210,18 +211,20 @@ function Contacts() {
                                         setSuccess(false);
                                     }}
                                     type='text'
-                                    name='Name'
+                                    name='name'
+                                    autoComplete='name'
                                     className={`form-input ${classes.input}`}
                                 />
                             </div>
                             <div className='input-container'>
                                 <label
-                                    htmlFor='Email'
+                                    htmlFor='contact-email'
                                     className={classes.label}
                                 >
                                     Email
                                 </label>
                                 <input
+                                    id='contact-email'
                                     placeholder='Masukkan Email'
                                     value={email}
                                     onChange={(e) => {
@@ -229,18 +232,20 @@ function Contacts() {
                                         setSuccess(false);
                                     }}
                                     type='email'
-                                    name='Email'
+                                    name='email'
+                                    autoComplete='email'
                                     className={`form-input ${classes.input}`}
                                 />
                             </div>
                             <div className='input-container'>
                                 <label
-                                    htmlFor='Message'
+                                    htmlFor='contact-message'
                                     className={classes.label}
                                 >
                                     Message
                                 </label>
                                 <textarea
+                                    id='contact-message'
                                     placeholder='Ketik pesan anda....'
                                     value={message}
                                     onChange={(e) => {
@@ -248,7 +253,8 @@ function Contacts() {
                                         setSuccess(false);
                                     }}
                                     type='text'
-                                    name='Message'
+                                    name='message'
+                                    autoComplete='off'
                                     className={`form-message ${classes.message}`}
                                 />
                             </div>
