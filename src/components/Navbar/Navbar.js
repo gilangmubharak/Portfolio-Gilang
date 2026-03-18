@@ -137,11 +137,14 @@ function Navbar() {
                     {shortname(headerData.name)}
                 </p>
 
-                <IoMenuSharp
-                    className={classes.navMenu}
+                <button
+                    type='button'
+                    className='menu-button'
                     onClick={handleDrawerOpen}
-                    aria-label='Menu'
-                />
+                    aria-label='Open navigation menu'
+                >
+                    <IoMenuSharp className={classes.navMenu} aria-hidden='true' />
+                </button>
             </div>
             <Drawer
                 variant='temporary'
@@ -159,19 +162,14 @@ function Navbar() {
                 disableScrollLock={true}
             >
                 <div className='div-closebtn'>
-                    <CloseIcon
+                    <button
+                        type='button'
+                        className='close-button'
                         onClick={handleDrawerClose}
-                        onKeyDown={(e) => {
-                            if (e.key === ' ' || e.key === 'Enter') {
-                                e.preventDefault();
-                                handleDrawerClose();
-                            }
-                        }}
-                        className={classes.closebtnIcon}
-                        role='button'
-                        tabIndex='0'
-                        aria-label='Close'
-                    />
+                        aria-label='Close navigation menu'
+                    >
+                        <CloseIcon className={classes.closebtnIcon} aria-hidden='true' />
+                    </button>
                 </div>
                 <br />
 
@@ -183,6 +181,7 @@ function Navbar() {
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
+                                aria-label='Go to home section'
                             >
                                 <div className={classes.drawerItem}>
                                     <IoHomeSharp
@@ -201,6 +200,7 @@ function Navbar() {
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
+                                aria-label='Go to about section'
                             >
                                 <div className={classes.drawerItem}>
                                     <FaUser className={classes.drawerIcon} />
@@ -217,6 +217,7 @@ function Navbar() {
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
+                                aria-label='Go to resume section'
                             >
                                 <div className={classes.drawerItem}>
                                     <HiDocumentText
@@ -235,6 +236,7 @@ function Navbar() {
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
+                                aria-label='Go to projects section'
                             >
                                 <div className={classes.drawerItem}>
                                     <FaFolderOpen
@@ -253,6 +255,7 @@ function Navbar() {
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
+                                aria-label='Go to services section'
                             >
                                 <div className={classes.drawerItem}>
                                     <BsFillGearFill
@@ -271,6 +274,7 @@ function Navbar() {
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
+                                aria-label='Go to contacts section'
                             >
                                 <div className={classes.drawerItem}>
                                     <MdPhone className={classes.drawerIcon} />

@@ -30,6 +30,14 @@
     margin-top: 5rem;
 }
 
+.menu-button,
+.close-button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
 .drawer > .MuiBackdrop-root {
     background: rgba(33, 33, 33, 0.15) !important;
     backdrop-filter: blur(20px) !important;

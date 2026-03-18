@@ -22,15 +22,17 @@ function App() {
     <div className="app">
       <Router>
         <ScrollToTop/>
-        <Suspense fallback={<div />}>
-          <Switch>
-            <Route path="/" exact component={Main} />
-            <Route path="/blog" exact component={BlogPage} />
-            <Route path="/projects" exact component={ProjectPage} />
+        <main id='main-content'>
+          <Suspense fallback={<div />}>
+            <Switch>
+              <Route path="/" exact component={Main} />
+              <Route path="/blog" exact component={BlogPage} />
+              <Route path="/projects" exact component={ProjectPage} />
 
-            <Redirect to="/" />
-          </Switch>
-        </Suspense>
+              <Redirect to="/" />
+            </Switch>
+          </Suspense>
+        </main>
       </Router>
       <Suspense fallback={null}>
         <BackToTop />

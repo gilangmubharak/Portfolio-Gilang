@@ -78,7 +78,7 @@ function ProjectPage() {
                 </Link>
                 <h1 style={{color: theme.secondary}}>Projects</h1>
             </header>
-           <main className="projectPage-container">
+           <div className="projectPage-container">
                <h2 className='sr-only-heading'>Project list</h2>
                <div className="projectPage-search">
                    <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search project..." className={classes.search} />
@@ -100,7 +100,7 @@ function ProjectPage() {
                         ))}
                    </Grid>
                </div>
-           </main>
+           </div>
         </div>
     )
 }

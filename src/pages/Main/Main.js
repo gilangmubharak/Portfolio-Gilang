@@ -22,7 +22,8 @@ function Main() {
             </Helmet>
 
             <Navbar />
-            <main id='main-content'>
+            <div role='document'>
+                <h1 className='sr-only-heading'>{headerData.name} Portfolio</h1>
                 <Landing />
                 <About />
                 <Education />
@@ -34,7 +35,7 @@ function Main() {
                 {/* <Testimonials /> */}
                 {/* <Blog /> */}
                 <Contacts />
-            </main>
+            </div>
             <Footer />
         </div>
     )

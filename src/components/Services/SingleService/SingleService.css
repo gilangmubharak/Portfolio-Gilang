@@ -33,7 +33,7 @@
 
 .service-icon > svg {
     font-size: 2.8rem;
-    /* color: #000000; */
+    color: currentColor;
 }
 
 .single-service:hover svg{
@@ -86,7 +86,7 @@
     font-size: 16px;
     text-align: center;
     line-height: 110%;
-    color: #000000;
+    color: currentColor;
 }
 
 @media screen and (max-width: 800px) {

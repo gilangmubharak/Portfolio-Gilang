@@ -79,7 +79,7 @@ function BlogPage() {
                 </Link>
                 <h1 style={{color: theme.secondary}}>Blogs</h1>
             </header>
-            <main className="blogPage--container">
+            <div className="blogPage--container">
                 <h2 className='sr-only-heading'>Blog list</h2>
                 <div className="blog--search">
                     <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Seach blog..." className={classes.search}/>
@@ -100,7 +100,7 @@ function BlogPage() {
                         ))}
                     </Grid>
                 </div>
-            </main>
+            </div>
         </div>
     )
 }
