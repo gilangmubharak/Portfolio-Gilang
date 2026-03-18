@@ -5,6 +5,7 @@ import isEmail from 'validator/lib/isEmail';
 import { makeStyles } from '@material-ui/core/styles';
 import {
     SiTwitter,
+    SiLinkedin,
     SiGithub,
     SiYoutube,
     SiReddit,
@@ -15,7 +16,6 @@ import {
     SiMedium,
     SiNotion
 } from 'react-icons/si';
-import { FaLinkedinIn } from 'react-icons/fa';
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
 import { FiPhone, FiAtSign } from 'react-icons/fi';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
@@ -387,7 +387,7 @@ function Contacts() {
                                     className={classes.socialIcon}
                                     aria-label='LinkedIn profile'
                                 >
-                                    <FaLinkedinIn aria-label='LinkedIn' />
+                                    <SiLinkedin aria-label='LinkedIn' />
                                 </a>
                             )}
                             {socialsData.instagram && (
