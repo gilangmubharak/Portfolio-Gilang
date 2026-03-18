@@ -11,11 +11,11 @@ import { socialsData } from '../../data/socialsData';
 
 import {
     SiTwitter,
-    SiLinkedin,
     SiGithub,
     SiInstagram,
     SiNotion,
 } from 'react-icons/si';
+import { FaLinkedinIn } from 'react-icons/fa';
 
 function Landing() {
     const { theme, drawerOpen } = useContext(ThemeContext);
@@ -83,7 +83,7 @@ function Landing() {
                                 rel='noreferrer'
                                 aria-label='LinkedIn profile'
                             >
-                                <SiLinkedin
+                                <FaLinkedinIn
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='LinkedIn'
