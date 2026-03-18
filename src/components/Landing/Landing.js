@@ -176,27 +176,29 @@ function Landing() {
 
                         <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (
-                                <a
+                                <Button
+                                    component='a'
                                     href={headerData.resumePdf}
                                     download='cv'
                                     target='_blank'
                                     rel='noreferrer'
+                                    aria-label='Download CV'
+                                    className={classes.resumeBtn}
                                 >
-                                    <Button className={classes.resumeBtn}>
-                                        Download CV
-                                    </Button>
-                                </a>
+                                    Download CV
+                                </Button>
                             )}
-                            <NavLink
+                            <Button
+                                component={NavLink}
                                 to='/#contacts'
                                 smooth={true}
                                 spy='true'
                                 duration={2000}
+                                aria-label='Go to contacts section'
+                                className={classes.contactBtn}
                             >
-                                <Button className={classes.contactBtn}>
-                                    Contact
-                                </Button>
-                            </NavLink>
+                                Contact
+                            </Button>
                         </div>
                     </div>
                 </div>
