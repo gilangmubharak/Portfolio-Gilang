@@ -34,7 +34,7 @@ function Skills() {
                     >
                         {skillsData.map((skill, id) => (
                             <div className="skill--box" key={id} style={skillBoxStyle}>
-                                <img src={skillsImage(skill)} alt={skill} />
+                                <img src={skillsImage(skill)} alt={skill} loading='lazy' decoding='async' />
                                 <h3 style={{color: theme.tertiary}}>
                                     {skill}
                                 </h3>

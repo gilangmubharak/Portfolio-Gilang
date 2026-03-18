@@ -3,6 +3,26 @@
     "installCommand": "yarn install",
     "buildCommand": "yarn build:prod",
     "outputDirectory": "build",
+    "headers": [
+        {
+            "source": "/static/(.*)",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, max-age=31536000, immutable"
+                }
+            ]
+        },
+        {
+            "source": "/(.*)\\.(png|jpg|jpeg|svg|webp|gif|ico|woff|woff2|ttf)$",
+            "headers": [
+                {
+                    "key": "Cache-Control",
+                    "value": "public, max-age=31536000, immutable"
+                }
+            ]
+        }
+    ],
     "rewrites": [
         {
             "source": "/api/(.*)",

@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { IoIosArrowDropupCircle } from 'react-icons/io';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -26,7 +26,13 @@ function BackToTop() {
         });
     };
 
-    window.addEventListener('scroll', toggleVisible);
+    useEffect(() => {
+        window.addEventListener('scroll', toggleVisible);
+
+        return () => {
+            window.removeEventListener('scroll', toggleVisible);
+        };
+    }, []);
 
     const useStyles = makeStyles(() => ({
         icon: {

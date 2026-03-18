@@ -1,5 +1,5 @@
 import CVgilang from '../assets/pdf/CV - GILANG FAUZUL MUBHARAK.pdf'
-import Gilanglogo from '../assets/png/Portfolio.png';
+import Gilanglogo from '../assets/png/Portfolio_opt.jpg';
 
 
 export const headerData = {

@@ -25,6 +25,9 @@ function About() {
                     <img 
                         src={aboutData.image === 1 ? theme.aboutimg1 : theme.aboutimg2}  
                         alt="" 
+                        width='380'
+                        loading='lazy'
+                        decoding='async'
                     />
                 </div>
             </div>

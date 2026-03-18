@@ -1,7 +1,7 @@
-import Javalogo from '../assets/png/java_basic.png'
-import Jslogo from '../assets/png/javascript_intermediate.png'
-import Pylogo from '../assets/png/python_basic.png'
-import SQLlogo from '../assets/png/sql_intermediate.png'
+import Javalogo from '../assets/png/java_basic_opt.jpg'
+import Jslogo from '../assets/png/javascript_intermediate_opt.jpg'
+import Pylogo from '../assets/png/python_basic_opt.jpg'
+import SQLlogo from '../assets/png/sql_intermediate_opt.jpg'
 
 export const achievementData = {
     bio : "Memasukkan pencapaian yang terukur dalam resume adalah hal yang bagus, tetapi saya tidak bekerja dengan angka-angka yang sulit. Saya tidak memiliki data untuk mendukung kualitas pekerjaan saya.",
