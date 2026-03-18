@@ -531,7 +531,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-private-property-in-object@npm:^7.16.7, @babel/plugin-proposal-private-property-in-object@npm:^7.21.11":
+"@babel/plugin-proposal-private-property-in-object@npm:^7.16.7":
   version: 7.21.11
   resolution: "@babel/plugin-proposal-private-property-in-object@npm:7.21.11"
   dependencies:
@@ -12440,7 +12440,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "portfolio-gilang@workspace:."
   dependencies:
-    "@babel/plugin-proposal-private-property-in-object": "npm:^7.21.11"
     "@material-ui/core": "npm:^4.12.2"
     "@material-ui/icons": "npm:^4.11.2"
     "@mui/icons-material": "npm:^7.2.0"
