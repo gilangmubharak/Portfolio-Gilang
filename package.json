@@ -32,7 +32,7 @@
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "build:win": "cross-env GENERATE_SOURCEMAP=false NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
-    "build:prod": "cross-env GENERATE_SOURCEMAP=false NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+    "build:prod": "GENERATE_SOURCEMAP=false NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
