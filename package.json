@@ -57,6 +57,9 @@
       "last 1 safari version"
     ]
   },
+  "resolutions": {
+    "babel-preset-react-app": "10.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.26.10",
     "cross-env": "^7.0.3",
