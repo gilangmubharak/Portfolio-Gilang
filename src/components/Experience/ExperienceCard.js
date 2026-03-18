@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Fade from 'react-reveal/Fade';
+import Fade from '../../utils/Fade';
 
 import { ThemeContext } from '../../contexts/ThemeContext';
 
@@ -29,12 +29,12 @@ function ExperienceCard({id, company, jobtitle, startYear, endYear}) {
         <Fade bottom>
             <div key={id} className={`experience-card ${classes.experienceCard}`}>
                 <div className="expcard-img" style={{backgroundColor: theme.primary}}>
-                    <img src={theme.type === 'light' ? expImgBlack : expImgWhite} alt="" />
+                    <img src={theme.type === 'light' ? expImgBlack : expImgWhite} alt="" width='36' height='36' loading='lazy' decoding='async' />
                 </div>
                 <div className="experience-details">
-                    <h6 style={{color: theme.primary}}>{startYear}-{endYear}</h6>
-                    <h4 style={{color: theme.tertiary}}>{jobtitle}</h4>
-                    <h5 style={{color: theme.tertiary80}}>{company}</h5>
+                    <p className='experience-years' style={{color: theme.primary}}>{startYear}-{endYear}</p>
+                    <h3 style={{color: theme.tertiary}}>{jobtitle}</h3>
+                    <p className='experience-company' style={{color: theme.tertiary80}}>{company}</p>
                 </div>
             </div>
         </Fade>   

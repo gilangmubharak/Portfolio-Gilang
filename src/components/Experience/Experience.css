@@ -21,7 +21,7 @@
     margin-right: 2rem;
 }
 
-.experience-description > h1 {
+.experience-description > h2 {
     font-size: 3.5rem;
     font-family: var(--primaryFont);
     margin-bottom: 2rem;
@@ -59,20 +59,24 @@
     margin-left: 0.6rem;
 }
 
-.experience-details > h6 {
+.experience-details > .experience-years {
     font-family: var(--primaryFont);
     font-size: 0.85rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin: 0 0 0.5rem 0;
 }
 
-.experience-details > h4 {
+.experience-details > .experience-company {
+    margin: 0;
+}
+
+.experience-details > h3 {
     font-family: var(--primaryFont);
     font-size: 1.225rem;
     font-weight: 600;
 }
 
-.experience-details > h5 {
+.experience-details > .experience-company {
     font-family: var(--primaryFont);
     font-size: 1.15rem;
     font-weight: 600;
@@ -113,7 +117,7 @@
         flex: 1;
         margin: auto;
     }    
-    .experience-description > h1{
+    .experience-description > h2{
         font-size: 3.2rem;
     }
     .experience-card {
@@ -124,7 +128,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    .experience-description > h1{
+    .experience-description > h2{
         font-size: 3rem;
         margin-bottom: 2rem;
         align-self: center;
@@ -146,24 +150,24 @@
     .expcard-img > img {
         width: 30px;
     }
-    .experience-details > h6 {
+    .experience-details > .experience-years {
         font-size: 0.85rem;
         margin-bottom: 0.45rem;
     }
     
-    .experience-details > h4 {
+    .experience-details > h3 {
         font-size: 1.125rem;
         line-height: 126%;
     }
     
-    .experience-details > h5 {
+    .experience-details > .experience-company {
         font-size: 1.05rem;
         line-height: 126%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .experience-description > h1{
+    .experience-description > h2{
         font-size: 2.5rem;
     }
 }

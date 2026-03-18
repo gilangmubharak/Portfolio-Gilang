@@ -69,7 +69,8 @@
   font-style: normal;
 }
 
-.lcr--content h6 {
+.lcr--content .landing-subtitle {
+  display: block;
   font-weight: 500;
   font-size: 1.25rem;
   margin-bottom: -0.85rem;
@@ -117,7 +118,7 @@
     margin: 2rem;
   }
 
-  .lcr--content h6 {
+  .lcr--content .landing-subtitle {
     font-size: 1.1rem;
   }
 
@@ -203,7 +204,7 @@
     margin-right: initial;
     width: 100%;
   }
-  .lcr--content h6 {
+  .lcr--content .landing-subtitle {
     font-size: 1rem;
     text-align: center;
   }

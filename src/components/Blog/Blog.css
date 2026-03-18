@@ -18,7 +18,7 @@
 }
 
 
-.blog--header h1 {
+.blog--header h2 {
     margin-bottom: 40px;
     font-size: 3.5rem;
     font-family: var(--primaryFont);
@@ -83,14 +83,14 @@
 }
 
 @media screen and (max-width: 800px) {
-    .blog--header h1 {
+    .blog--header h2 {
         font-size: 3rem;
         margin-bottom: 30px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .blog--header h1 {
+    .blog--header h2 {
         font-size: 2.5rem;
         margin-bottom: 20px;
     }

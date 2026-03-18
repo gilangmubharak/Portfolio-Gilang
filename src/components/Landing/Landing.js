@@ -81,6 +81,7 @@ function Landing() {
                                 href={socialsData.linkedIn}
                                 target='_blank'
                                 rel='noreferrer'
+                                aria-label='LinkedIn profile'
                             >
                                 <SiLinkedin
                                     className='landing--social'
@@ -94,6 +95,7 @@ function Landing() {
                                 href={socialsData.github}
                                 target='_blank'
                                 rel='noreferrer'
+                                aria-label='GitHub profile'
                             >
                                 <SiGithub
                                     className='landing--social'
@@ -107,6 +109,7 @@ function Landing() {
                                 href={socialsData.instagram}
                                 target='_blank'
                                 rel='noreferrer'
+                                aria-label='Instagram profile'
                             >
                                 <SiInstagram
                                     className='landing--social'
@@ -120,6 +123,7 @@ function Landing() {
                                 href={socialsData.twitter}
                                 target='_blank'
                                 rel='noreferrer'
+                                aria-label='Twitter profile'
                             >
                                 <SiTwitter
                                     className='landing--social'
@@ -133,6 +137,7 @@ function Landing() {
                                 href={socialsData.notion}
                                 target='_blank'
                                 rel='noreferrer'
+                                aria-label='Notion profile'
                             >
                                 <SiNotion
                                     className='landing--social'
@@ -147,6 +152,11 @@ function Landing() {
                     src={headerData.image}
                     alt=''
                     className='landing--img'
+                    width='400'
+                    height='400'
+                    loading='eager'
+                    fetchPriority='high'
+                    decoding='async'
                     style={{
                         opacity: `${drawerOpen ? '0' : '1'}`,
                         borderColor: theme.secondary,
@@ -160,7 +170,7 @@ function Landing() {
                         className='lcr--content'
                         style={{ color: theme.tertiary }}
                     >
-                        <h6>{headerData.title}</h6>
+                        <span className='landing-subtitle'>{headerData.title}</span>
                         <h1>{headerData.name}</h1>
                         <p>{headerData.desciption}</p>
 

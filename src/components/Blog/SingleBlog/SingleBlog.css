@@ -50,8 +50,8 @@
     line-height: 115%;
 }
 
-.singleBlog--body h6 {
-    font-family: 'Noto Sans TC', sans-serif;
+.singleBlog--body .singleBlog--desc {
+    font-family: var(--primaryFont);
     font-size: 15px;
     line-height: 139%;
     font-weight: 500;

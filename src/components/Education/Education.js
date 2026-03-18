@@ -15,7 +15,7 @@ function Education() {
            
             <div className="education-body">
                 <div className="education-description">
-                <h1 style={{color:theme.primary}}>Pendidikan</h1>
+                <h2 style={{color:theme.primary}}>Pendidikan</h2>
                     {educationData.map(edu => (
                         <EducationCard 
                             key={edu.id}
@@ -28,7 +28,7 @@ function Education() {
                     ))}
                 </div>
                 <div className="education-image">
-                    <img src={theme.eduimg} alt=""/>
+                    <img src={theme.eduimg} alt="" loading='lazy' decoding='async'/>
                 </div>
             </div>
         </div>

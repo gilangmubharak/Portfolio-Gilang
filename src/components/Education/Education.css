@@ -22,7 +22,7 @@
     margin-left: 7%;
 }
 
-.education-description > h1{
+.education-description > h2{
     font-size: 3.5rem;
     font-family: var(--primaryFont);
     margin-bottom: 2rem;
@@ -59,20 +59,24 @@
     margin-left: 0.6rem;
 }
 
-.education-details > h6 {
+.education-details > .education-years {
     font-family: var(--primaryFont);
     font-size: 0.85rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin: 0 0 0.5rem 0;
 }
 
-.education-details > h4 {
+.education-details > .education-institution {
+    margin: 0;
+}
+
+.education-details > h3 {
     font-family: var(--primaryFont);
     font-size: 1.225rem;
     font-weight: 600;
 }
 
-.education-details > h5 {
+.education-details > .education-institution {
     font-family: var(--primaryFont);
     font-size: 1.15rem;
     font-weight: 600;
@@ -108,7 +112,7 @@
         flex: 1;
         margin: auto;
     }    
-    .education-description > h1{
+    .education-description > h2{
         font-size: 3.2rem;
     }
     .education-card {
@@ -119,7 +123,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    .education-description > h1{
+    .education-description > h2{
         font-size: 3rem;
         margin-bottom: 2rem;
         align-self: center;
@@ -141,24 +145,24 @@
     .educard-img > img {
         width: 30px;
     }
-    .education-details > h6 {
+    .education-details > .education-years {
         font-size: 0.85rem;
         margin-bottom: 0.45rem;
     }
     
-    .education-details > h4 {
+    .education-details > h3 {
         font-size: 1.125rem;
         line-height: 126%;
     }
     
-    .education-details > h5 {
+    .education-details > .education-institution {
         font-size: 1.05rem;
         line-height: 126%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .education-description > h1{
+    .education-description > h2{
         font-size: 2.5rem;
     }
 }

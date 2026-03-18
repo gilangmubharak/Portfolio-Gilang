@@ -71,7 +71,7 @@
     
 }
 
-.service-content > h4 {
+.service-content > h3 {
     position: absolute;
     top: 60%;
     height: 60px;
@@ -99,7 +99,7 @@
         font-size: 2.5rem;
     }
     
-    .service-content > h4 {
+    .service-content > h3 {
         font-size: 15px;
     }
 }
@@ -114,7 +114,7 @@
         font-size: 2.2rem;
     }
     
-    .service-content > h4 {
+    .service-content > h3 {
         font-size: 13px;
         top: 50%;
     }

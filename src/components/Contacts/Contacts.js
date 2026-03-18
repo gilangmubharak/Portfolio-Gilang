@@ -194,7 +194,7 @@ function Contacts() {
             style={{ backgroundColor: theme.secondary }}
         >
             <div className='contacts--container'>
-                <h1 style={{ color: theme.primary }}>Contacts</h1>
+                <h2 style={{ color: theme.primary }}>Contacts</h2>
                 <div className='contacts-body'>
                     <div className='contacts-form'>
                         <form onSubmit={handleContactForm}>
@@ -363,6 +363,7 @@ function Contacts() {
                                     target='_blank'
                                     rel='noreferrer'
                                     className={classes.socialIcon}
+                                    aria-label='Twitter profile'
                                 >
                                     <SiTwitter aria-label='Twitter' />
                                 </a>
@@ -373,6 +374,7 @@ function Contacts() {
                                     target='_blank'
                                     rel='noreferrer'
                                     className={classes.socialIcon}
+                                    aria-label='GitHub profile'
                                 >
                                     <SiGithub aria-label='GitHub' />
                                 </a>
@@ -383,6 +385,7 @@ function Contacts() {
                                     target='_blank'
                                     rel='noreferrer'
                                     className={classes.socialIcon}
+                                    aria-label='LinkedIn profile'
                                 >
                                     <SiLinkedin aria-label='LinkedIn' />
                                 </a>
@@ -393,6 +396,7 @@ function Contacts() {
                                     target='_blank'
                                     rel='noreferrer'
                                     className={classes.socialIcon}
+                                    aria-label='Instagram profile'
                                 >
                                     <SiInstagram aria-label='Instagram' />
                                 </a>
@@ -403,6 +407,7 @@ function Contacts() {
                                     target='_blank'
                                     rel='noreferrer'
                                     className={classes.socialIcon}
+                                    aria-label='Stack Overflow profile'
                                 >
                                     <SiStackoverflow aria-label='Stack Overflow' />
                                 </a>
@@ -413,6 +418,7 @@ function Contacts() {
                                     target='_blank'
                                     rel='noreferrer'
                                     className={classes.socialIcon}
+                                    aria-label='Medium profile'
                                 >
                                     <SiMedium aria-label='Medium' />
                                 </a>
@@ -423,6 +429,7 @@ function Contacts() {
                                     target='_blank'
                                     rel='noreferrer'
                                     className={classes.socialIcon}
+                                    aria-label='Reddit profile'
                                 >
                                     <SiReddit aria-label='Reddit' />
                                 </a>
@@ -433,6 +440,7 @@ function Contacts() {
                                     target='_blank'
                                     rel='noreferrer'
                                     className={classes.socialIcon}
+                                    aria-label='YouTube channel'
                                 >
                                     <SiYoutube aria-label='YouTube' />
                                 </a>
@@ -443,6 +451,7 @@ function Contacts() {
                                     target='_blank'
                                     rel='noreferrer'
                                     className={classes.socialIcon}
+                                    aria-label='CodePen profile'
                                 >
                                     <SiCodepen aria-label='CodePen' />
                                 </a>
@@ -453,6 +462,7 @@ function Contacts() {
                                     target='_blank'
                                     rel='noreferrer'
                                     className={classes.socialIcon}
+                                    aria-label='GitLab profile'
                                 >
                                     <SiGitlab aria-label='GitLab' />
                                 </a>
@@ -463,6 +473,7 @@ function Contacts() {
                                     target='_blank'
                                     rel='noreferrer'
                                     className={classes.socialIcon}
+                                    aria-label='Notion profile'
                                 >
                                     <SiNotion aria-label='Notion' />
                                 </a>
@@ -475,6 +486,10 @@ function Contacts() {
                 src={theme.contactsimg}
                 alt='contacts'
                 className='contacts--img'
+                width='280'
+                height='280'
+                loading='lazy'
+                decoding='async'
             />
         </div>
     );

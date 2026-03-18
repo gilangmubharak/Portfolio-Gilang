@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { FaPlay, FaCode } from 'react-icons/fa';
-import Fade from 'react-reveal/Fade';
+import Fade from '../../../utils/Fade';
 
 import placeholder from '../../../assets/png/placeholder.png';
 import './SingleProject.css';
@@ -42,24 +42,27 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                 style={{ backgroundColor: theme.primary400 }}
             >
                 <div className='projectContent'>
-                    <h2
+                    <h3
                         id={name.replace(' ', '-').toLowerCase()}
                         style={{ color: theme.tertiary }}
                     >
                         {name}
-                    </h2>
-                    <img src={image ? image : placeholder} alt={name} />
+                    </h3>
+                    <img
+                        src={image ? image : placeholder}
+                        alt={name}
+                        width='260'
+                        height='180'
+                        loading='lazy'
+                        decoding='async'
+                    />
                     <div className='project--showcaseBtn'>
                         <a
                             href={demo}
                             target='_blank'
                             rel='noreferrer'
                             className={classes.iconBtn}
-                            aria-labelledby={`${name
-                                .replace(' ', '-')
-                                .toLowerCase()} ${name
-                                .replace(' ', '-')
-                                .toLowerCase()}-demo`}
+                            aria-label={`View demo of ${name}`}
                         >
                             <FaPlay
                                 id={`${name
@@ -74,11 +77,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                             target='_blank'
                             rel='noreferrer'
                             className={classes.iconBtn}
-                            aria-labelledby={`${name
-                                .replace(' ', '-')
-                                .toLowerCase()} ${name
-                                .replace(' ', '-')
-                                .toLowerCase()}-code`}
+                            aria-label={`View source code of ${name}`}
                         >
                             <FaCode
                                 id={`${name

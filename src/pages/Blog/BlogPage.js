@@ -73,13 +73,14 @@ function BlogPage() {
             <Helmet>
                 <title>{headerData.name} | Blog</title>
             </Helmet>
-            <div className="blogPage--header" style={{backgroundColor: theme.primary}}>
-                <Link to="/">
+            <header className="blogPage--header" style={{backgroundColor: theme.primary}}>
+                <Link to="/" aria-label="Go to homepage">
                     <AiOutlineHome className={classes.home}/>
                 </Link>
                 <h1 style={{color: theme.secondary}}>Blogs</h1>
-            </div>
-            <div className="blogPage--container">
+            </header>
+            <main className="blogPage--container">
+                <h2 className='sr-only-heading'>Blog list</h2>
                 <div className="blog--search">
                     <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Seach blog..." className={classes.search}/>
                 </div>
@@ -99,7 +100,7 @@ function BlogPage() {
                         ))}
                     </Grid>
                 </div>
-            </div>
+            </main>
         </div>
     )
 }

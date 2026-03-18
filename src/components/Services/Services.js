@@ -15,7 +15,7 @@ function Services() {
             {servicesData.length > 0 && (
                 <div className="services" id="services" style={{backgroundColor:theme.secondary}}>
                     <div className="services-header">
-                        <h1 style={{color: theme.primary}}>Services</h1>
+                        <h2 style={{color: theme.primary}}>Services</h2>
                     </div>
                     <div className="services-body">
                         <p style={{color:theme.tertiary80}}>

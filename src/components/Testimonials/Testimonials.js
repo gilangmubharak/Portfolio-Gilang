@@ -46,7 +46,7 @@ function Testimonials() {
                     style={{ backgroundColor: theme.primary }}
                 >
                     <div className='testimonials--header'>
-                        <h1 style={{ color: theme.secondary }}>Testimonials</h1>
+                        <h2 style={{ color: theme.secondary }}>Testimonials</h2>
                     </div>
                     <div className='testimonials--body'>
                         <FaQuoteLeft
@@ -74,6 +74,10 @@ function Testimonials() {
                                                 <img
                                                     src={test.image}
                                                     alt={test.name}
+                                                    width='90'
+                                                    height='90'
+                                                    loading='lazy'
+                                                    decoding='async'
                                                 />
                                             </div>
                                             <div
@@ -85,8 +89,8 @@ function Testimonials() {
                                                 }}
                                             >
                                                 <p>{test.text}</p>
-                                                <h1>{test.name}</h1>
-                                                <h4>{test.title}</h4>
+                                                <h3>{test.name}</h3>
+                                                <p className='review-title'>{test.title}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -96,20 +100,20 @@ function Testimonials() {
                                 className='prevBtn'
                                 onClick={gotoPrev}
                                 style={{ backgroundColor: theme.secondary }}
+                                aria-label='Previous testimonial'
                             >
                                 <FaArrowLeft
                                     style={{ color: theme.primary }}
-                                    aria-label='Previous testimonial'
                                 />
                             </button>
                             <button
                                 className='nextBtn'
                                 onClick={gotoNext}
                                 style={{ backgroundColor: theme.secondary }}
+                                aria-label='Next testimonial'
                             >
                                 <FaArrowRight
                                     style={{ color: theme.primary }}
-                                    aria-label='Next testimonial'
                                 />
                             </button>
                         </div>

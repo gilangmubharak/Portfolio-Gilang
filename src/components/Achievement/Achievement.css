@@ -16,16 +16,17 @@
     width: 90%;
 }
 
-.achievement-body h1 {
+.achievement-body h2 {
     font-family: var(--primaryFont);
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
 }
 
-.achievement-body h4 {
+.achievement-body p {
     font-size: 1.75rem;
-    font-family: 'Caveat', cursive;
+    font-family: var(--primaryFont);
     font-weight: 400;
+    font-style: italic;
 }
 
 .achievement-cards {
@@ -75,8 +76,9 @@
     left: 25px;
 }
 
-.achievecard-details2 h5 {
+.achievecard-details2 p {
    width: 50%;
+   margin: 0;
 }
 
 .achievecard-field {
@@ -90,7 +92,7 @@
     margin-right: 6px;
 }
 
-.achievecard-details1 h2 {
+.achievecard-details1 h3 {
     font-family: var(--primaryFont);
     font-weight: 500;
     font-size: 1.225rem;
@@ -100,7 +102,7 @@
 
 .achievecard-details1 p {
     font-size: 1.10rem;
-    font-family: Roboto;
+    font-family: var(--primaryFont);
     font-weight: 400;
 }
 
@@ -111,6 +113,7 @@
 .achievecard-imgcontainer > img {
     width: 150px;
     height: 130px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -127,7 +130,7 @@
         flex: 0.3;
         width: 90%;
     }
-    .achievement-body h1 {
+    .achievement-body h2 {
         font-family: var(--primaryFont);
         font-size: 3.1rem;
     }
@@ -159,7 +162,7 @@
         width: 100%;
     }
 
-    .achievement-body h1 {
+    .achievement-body h2 {
         font-size: 2.5rem;
     }
 
@@ -183,7 +186,7 @@
         margin-bottom: 20px;
     }
 
-    .achievecard-details1 h2 {
+    .achievecard-details1 h3 {
         font-size: 1.15rem;
     }
 
@@ -222,7 +225,7 @@
 
 @media screen and (max-width: 600px) {
 
-    .achievement-body h4 {
+    .achievement-body p {
         font-size: 1.5rem;
     }
 
@@ -235,4 +238,3 @@
     }
 
 }
-

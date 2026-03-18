@@ -35,7 +35,7 @@
 }
 
 
-.testimonials--header h1{
+.testimonials--header h2{
     font-style: normal;
     font-weight: bold;
     font-size: 3.5rem;
@@ -159,14 +159,14 @@
     font-weight: 300;
     width: 80%;
 }
-.review--content h1{
+.review--content h3{
     font-size: 1.5rem;
     font-weight: 600;
 
     margin-top: 10px;
 }
 
-.review--content h4{
+.review--content .review-title{
     font-size: 1rem;
     font-weight: 500;
 }
@@ -179,7 +179,7 @@
         padding-bottom: 2rem;
     }
 
-  .testimonials--header h1{
+  .testimonials--header h2{
     font-size: 3rem;
     margin-top: 1.75rem;
   }
@@ -196,7 +196,7 @@
 
 @media (max-width: 768px) {
 
-  .testimonials--header h1{
+  .testimonials--header h2{
     font-size: 2.5rem;
   }
   .testimonials--body{
@@ -227,17 +227,17 @@
       font-size: 0.9rem;
       width: 90%;
   }
-  .review--content h1{
+  .review--content h3{
       font-size: 1.3rem;
   }
 
-  .review--content h4{
+  .review--content .review-title{
       font-size: 0.9rem;
   }
 }
 
 @media (max-width: 360px){
-  .testimonials--header h1{
+  .testimonials--header h2{
     font-size: 2.2rem;
   }
   .testimonials--body .quote{
