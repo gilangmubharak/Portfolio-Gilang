@@ -82,7 +82,17 @@ function BlogPage() {
             <div className="blogPage--container">
                 <h2 className='sr-only-heading'>Blog list</h2>
                 <div className="blog--search">
-                    <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Seach blog..." className={classes.search}/>
+                    <input
+                        type="search"
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                        placeholder="Seach blog..."
+                        className={classes.search}
+                        name='blog-search'
+                        id='blog-search'
+                        autoComplete='off'
+                        aria-label='Search blog'
+                    />
                 </div>
                 <div className="blogs--container">
                     <Grid className="blog-grid" container direction="row" alignItems="center" justifyContent="center">

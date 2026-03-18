@@ -81,7 +81,17 @@ function ProjectPage() {
            <div className="projectPage-container">
                <h2 className='sr-only-heading'>Project list</h2>
                <div className="projectPage-search">
-                   <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Search project..." className={classes.search} />
+                   <input
+                       type="search"
+                       value={search}
+                       onChange={(e) => setSearch(e.target.value)}
+                       placeholder="Search project..."
+                       className={classes.search}
+                       name='project-search'
+                       id='project-search'
+                       autoComplete='off'
+                       aria-label='Search project'
+                    />
                </div>
                <div className="project-container">
                    <Grid className="project-grid" container direction="row" alignItems="center" justifyContent="center">
