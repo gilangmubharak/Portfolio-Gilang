@@ -1,10 +1,10 @@
 export const socialsData = {
     github: 'https://github.com/gilangmubharak',
     facebook: 'https://www.facebook.com/gilangmubharak',
-    linkedIn: 'https://www.linkedin.com/in/gilang-f-mubharak-92433a309/',
+    linkedIn: 'https://www.linkedin.com/in/gilangmubharak',
     instagram: 'https://www.instagram.com/gilangmubharak/',
     codepen: 'https://codepen.io/',
-    twitter: 'https://twitter.com/gilangg1990',
+    twitter: 'https://twitter.com/gilthunder661',
     reddit: 'https://www.reddit.com/user/',
     blogger: 'https://www.blogger.com/',
     medium: 'https://medium.com/@gilangmubharak',
