@@ -23,10 +23,11 @@
 }
 
 .achievement-body p {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-family: var(--primaryFont);
     font-weight: 400;
     font-style: italic;
+    line-height: 1.6;
 }
 
 .achievement-cards {
@@ -166,6 +167,11 @@
         font-size: 2.5rem;
     }
 
+    .achievement-body p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
     .achievement-cards {
         margin-left: 0%;
         padding: 1rem 0;
@@ -218,17 +224,23 @@
     .achievement{
         padding: 1rem;
     }
+
+    .achievement-body h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .achievement-body p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
     .achievement-cards {
         width: 100%;
     }
 }
 
 @media screen and (max-width: 600px) {
-
-    .achievement-body p {
-        font-size: 1.5rem;
-    }
-
     .achievecard-details1 p {
         font-size: 0.95rem;
     }
