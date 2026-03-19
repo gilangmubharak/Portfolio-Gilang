@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Button } from '@material-ui/core';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { makeStyles } from '@material-ui/core/styles';
@@ -19,6 +19,21 @@ import {
 
 function Landing() {
     const { theme, drawerOpen } = useContext(ThemeContext);
+
+    useEffect(() => {
+        if (!headerData.image) return undefined;
+
+        const preload = document.createElement('link');
+        preload.rel = 'preload';
+        preload.as = 'image';
+        preload.href = headerData.image;
+        preload.fetchPriority = 'high';
+        document.head.appendChild(preload);
+
+        return () => {
+            document.head.removeChild(preload);
+        };
+    }, []);
 
     const useStyles = makeStyles((t) => ({
         resumeBtn: {
